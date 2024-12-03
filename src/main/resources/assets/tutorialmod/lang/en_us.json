@@ -2,5 +2,9 @@
   "item.tutorialmod.sapphire":"Sapphire",
   "item.tutorialmod.ruby":"Ruby",
 
+
+
+  "block.tutorialmod.sapphire_block":"Block of Sapphire",
+
   "creativetab.tutorial_tab": "Tutorial Tab"
 }

@@ -1,6 +1,7 @@
 package net.buzzy.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.buzzy.tutorialmod.block.ModBlocks;
 import net.buzzy.tutorialmod.item.ModCreativeModeTabs;
 import net.buzzy.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -30,6 +31,9 @@ public class TutorialMod
         IEventBus modEventBus = context.getModEventBus();
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);

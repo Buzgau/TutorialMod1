@@ -1,6 +1,7 @@
 package net.buzzy.tutorialmod.item;
 
 import net.buzzy.tutorialmod.TutorialMod;
+import net.buzzy.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,7 +22,7 @@ public class ModCreativeModeTabs {
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RUBY.get());
-
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
 
                     }))
                     .build());
