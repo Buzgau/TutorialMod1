@@ -1,6 +1,8 @@
 package net.buzzy.tutorialmod.item;
 
 import net.buzzy.tutorialmod.TutorialMod;
+import net.buzzy.tutorialmod.item.custom.FuelItem;
+import net.buzzy.tutorialmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,6 +19,19 @@ public class ModItems {
 
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties()));
+
+
+    public static final RegistryObject<Item> PINECONE = ITEMS.register("pinecone",
+            () -> new FuelItem(new Item.Properties(),400));
+
+
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(10)));
+
+
+
+
+
 
 
     public static void register(IEventBus eventBus){
