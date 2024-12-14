@@ -4,6 +4,8 @@
 
   "item.tutorialmod.metal_detector":"Metal Detector",
   "item.tutorialmod.pinecone":"Pinecone",
+  "item.tutorialmod.sapphire_staff":"Sapphire Staff",
+  "item.tutorialmod.sapphire_sword":"Sapphire Sword",
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds iron ore underground",
 

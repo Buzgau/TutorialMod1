@@ -27,6 +27,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.METAL_DETECTOR.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());
                         output.accept(ModItems.PINECONE.get());
+                        output.accept(ModItems.SAPPHIRE_STAFF.get());
+                        output.accept(ModItems.SAPPHIRE_SWORD.get());
 
                     }))
                     .build());

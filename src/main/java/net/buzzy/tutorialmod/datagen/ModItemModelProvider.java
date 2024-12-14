@@ -24,14 +24,22 @@ public class ModItemModelProvider extends ItemModelProvider {
 
             simpleItem(ModItems.PINECONE);
 
+            handheldItem(ModItems.SAPPHIRE_SWORD);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item>item){
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(TutorialMod.MOD_ID,"item/"+item.getId().getPath()));
+    }
 
+    private ItemModelBuilder handheldItem(RegistryObject<Item>item){
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(TutorialMod.MOD_ID,"item/" + item.getId().getPath()));
 
     }
+
 
 }
